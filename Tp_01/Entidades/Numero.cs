@@ -24,8 +24,6 @@ namespace Entidades
         }
         #endregion
 
-
-
         #region Constructores
         public Numero()
         {
@@ -43,9 +41,12 @@ namespace Entidades
         }
         #endregion
 
-
-
         #region Methods
+        /// <summary>
+        /// Valida el número en formato string que se ingresa.
+        /// </summary>
+        /// <param name="strNumero"></param>
+        /// <returns>TODOOK=Retorna el número en formato double.//Sino retorna 0.</returns>
         public double ValidarNumero(string strNumero)
         {
             double retornoDbl = default(double);
@@ -141,7 +142,7 @@ namespace Entidades
         public static string DecimalBinario(double numDouble)
         {
             //Retorna solo la parte entera.
-            //Y retulizo código.
+            //Y reutilizo código.
             return DecimalBinario(numDouble.ToString());//convierto el numeroDouble para poder usar la sobrecarga.
         }
         #endregion
@@ -177,8 +178,5 @@ namespace Entidades
             return retornoDb;
         }
         #endregion
-
-
-
     }
 }

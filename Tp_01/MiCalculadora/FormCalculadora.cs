@@ -16,11 +16,16 @@ namespace MiCalculadora
         public FormCalculadora()
         {
             InitializeComponent();
-            btnBinario.Enabled = false;
-            btnDecimal.Enabled = false;
         }
 
         #region Métodos estáticos
+        /// <summary>
+        /// Crea dos intancias de la clase Numero y usar el método Operar.
+        /// </summary>
+        /// <param name="num1"></param>
+        /// <param name="num2"></param>
+        /// <param name="operador"></param>
+        /// <returns>El resultado del método Operar.</returns>
         private static double Operar(string num1, string num2, string operador)
         {
             //Creo dos intancias del tipo Numero
@@ -30,6 +35,9 @@ namespace MiCalculadora
             return Calculadora.Operar(aux1, aux2, operador);
         }
 
+        /// <summary>
+        /// Limpia la pantalla del formulario.
+        /// </summary>
         private  void Limpiar()
         {
             btnBinario.Enabled = false;
@@ -44,32 +52,43 @@ namespace MiCalculadora
 
         //MANEJADORES DE EVENTOS.
         #region Manejadores de eventos.
+        /// <summary>
+        /// Botón que muestra en el label el resultado de la operacion de los dos numeros ingresados y el tipo de operación.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            //(Esta bien crear las instancias aca? o hacerlo mediante un método estático?)
-
-            //Numero aux1 = new Numero(txtBoxNumero1.Text);
-            //Numero aux2 = new Numero(txtBoxNumero2.Text);
-            //labelResultado.Text = (Calculadora.Operar(aux1,aux2, comboBoxOperaciones.Text)).ToString();
             labelResultado.Text = FormCalculadora.Operar(txtBoxNumero1.Text, txtBoxNumero2.Text, comboBoxOperaciones.Text).ToString();
             btnBinario.Enabled = true;
             btnDecimal.Enabled = false;
         }
 
+        /// <summary>
+        /// Botón que llama al método que limpia el formulario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
 
+        /// <summary>
+        /// Botón que cierra el formulario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            //Close();
-            if (MessageBox.Show("Esta seguro de cerrar el formulario?", "Cerrando form...", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
+        /// <summary>
+        /// Botón que convierte el número resultante a binario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBinario_Click(object sender, EventArgs e)
         {
             string aux = Numero.DecimalBinario(labelResultado.Text);
@@ -79,6 +98,11 @@ namespace MiCalculadora
             btnBinario.Enabled = false;
         }
 
+        /// <summary>
+        /// Botón que convierte el número binario a decimal.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDecimal_Click(object sender, EventArgs e)
         {
             labelResultado.Text = Numero.BinarioDecimal(labelResultado.Text);
@@ -87,14 +111,28 @@ namespace MiCalculadora
         }
         #endregion
 
+        /// <summary>
+        /// Evento que cierra el formulario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void FormCalculadora_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //esto ponerlo en el boton de cerrar
-            //FormClosingEventArgs = 
-            if (MessageBox.Show("Esta re re re re seguro?","Cerrando form...",MessageBoxButtons.YesNo) == DialogResult.No)
+            if (MessageBox.Show("Esta seguro de cerrar el formulario?", "Cerrando form...", MessageBoxButtons.YesNo) == DialogResult.No)
             {
-                e.Cancel = true;//lectura y escritura.
+                e.Cancel = true;
             }
+        }
+
+        /// <summary>
+        /// Evento que carga por defecto parámetros.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FormCalculadora_Load(object sender, EventArgs e)
+        {
+            btnBinario.Enabled = false;
+            btnDecimal.Enabled = false;
         }
     }
 }
