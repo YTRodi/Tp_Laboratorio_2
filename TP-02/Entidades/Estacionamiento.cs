@@ -10,9 +10,12 @@ namespace Entidades
     /// <summary>
     /// No podrá tener clases heredadas.
     /// </summary>
-    public class Estacionamiento
+    public sealed class Estacionamiento
     {
         #region Enumerados
+        /// <summary>
+        /// Enumerado que contiene los Tipos de Vehiculos.
+        /// </summary>
         public enum ETipo
         {
             Moto, 
@@ -28,10 +31,19 @@ namespace Entidades
         #endregion
 
         #region "Constructores"
+        /// <summary>
+        /// Constructor privaro que inicializa la lista de vehiculos.
+        /// </summary>
         private Estacionamiento()
         {
             this.vehiculos = new List<Vehiculo>();
         }
+        /// <summary>
+        /// Constructor por defecto que establece el espacio disponible
+        /// que tendrá el estacionamiento.
+        /// Además invoca al constructor privado.
+        /// </summary>
+        /// <param name="espacioDisponible">Espacio que tendra el estacionamiento</param>
         public Estacionamiento(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
@@ -40,7 +52,9 @@ namespace Entidades
 
         #region "Sobrecargas"
         /// <summary>
-        /// Muestro el estacionamiento y TODOS los vehículos
+        /// Sobre carga del método ToString.
+        /// Que llama al método mostrar de la misma clase.
+        /// Muestro el estacionamiento y TODOS los vehículos.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
@@ -54,11 +68,11 @@ namespace Entidades
 
         /// <summary>
         /// Expone los datos del elemento y su lista (incluidas sus herencias)
-        /// SOLO del tipo requerido
+        /// SOLO del tipo requerido.
         /// </summary>
         /// <param name="c">Elemento a exponer</param>
-        /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
-        /// <returns></returns>
+        /// <param name="tipo">Tipos de ítems de la lista a mostrar</param>
+        /// <returns>El méodo Mostrar dependiendo su tipo.</returns>
         public string Mostrar(Estacionamiento c, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
@@ -94,10 +108,6 @@ namespace Entidades
                     case ETipo.Todos:
                         sb.AppendLine(v.Mostrar());
                         break;
-
-                    //default://NO SE SI DEJARLO
-                    //    sb.AppendLine(v.Mostrar());
-                    //    break;
                 }
             }
 
@@ -106,43 +116,14 @@ namespace Entidades
         #endregion
 
         #region "Operadores"
-        //public static bool operator ==(Estacionamiento c, Vehiculo p)
-        //{
-        //    bool estaEnLaLista = false;
-
-        //    foreach (Vehiculo item in c.vehiculos)
-        //    {
-        //        if(item == p)
-        //        {
-        //            estaEnLaLista = true;
-        //        }
-        //    }
-            
-        //    return estaEnLaLista;
-        //}
-
-        //public static bool operator !=(Estacionamiento c, Vehiculo p)
-        //{
-        //    return !(c == p);
-        //}
-
-
         /// <summary>
-        /// Agregará un elemento a la lista
+        /// Agregará un elemento a la lista.
         /// </summary>
         /// <param name="c">Objeto donde se agregará el elemento</param>
         /// <param name="p">Objeto a agregar</param>
         /// <returns></returns>
         public static Estacionamiento operator +(Estacionamiento c, Vehiculo p)
         {
-            //if(c.vehiculos.Count < c.espacioDisponible)
-            //{
-            //    if (c != p)
-            //    {
-            //        c.vehiculos.Add(p);
-            //    }
-            //}
-            //return c;
             bool retorno = false;
 
             if (c.vehiculos.Count < c.espacioDisponible)
@@ -153,7 +134,6 @@ namespace Entidades
                     {
                         retorno = true;
                         break;
-                        //return c;
                     }
                 }
                 if (!retorno)
@@ -176,7 +156,7 @@ namespace Entidades
         {
             for (int i = 0; i < c.vehiculos.Count; i++)
             {
-                if(c.vehiculos[i] == p)//BORARR LO QUE ESTA EN EL INDICE.
+                if(c.vehiculos[i] == p)
                 {
                     c.vehiculos.RemoveAt(i);
                 }

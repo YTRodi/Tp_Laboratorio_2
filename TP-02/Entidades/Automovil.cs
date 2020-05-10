@@ -11,6 +11,9 @@ namespace Entidades
     public class Automovil : Vehiculo
     {
         #region Enumerados
+        /// <summary>
+        /// Enumerado que contiene los Tipos de automoviles.
+        /// </summary>
         public enum ETipo
         {
             Monovolumen,
@@ -24,26 +27,36 @@ namespace Entidades
 
         #region Constructores
         /// <summary>
-        /// Por defecto, TIPO será Monovolumen
+        /// Constructor de 3 parámetros.
+        /// Utiliza los campos de la clase base.
+        /// Setea por defecto el tipo en Monovolumen.
         /// </summary>
-        /// <param name="marca"></param>
-        /// <param name="chasis"></param>
-        /// <param name="color"></param>
+        /// <param name="marca">Marca del automovil a inicializar</param>
+        /// <param name="chasis">Chasis del automovil a inicializar</param>
+        /// <param name="color">Color del automovil a inicializar</param>
         public Automovil(EMarca marca, string chasis, ConsoleColor color) : base(chasis, marca, color)
         {
             this.tipo = ETipo.Monovolumen;
         }
 
+        /// <summary>
+        /// Constructor de 4 parámetros.
+        /// 1er Sobrecarga.
+        /// </summary>
+        /// <param name="marca">Marca del automovil a inicializar</param>
+        /// <param name="chasis">Chasis del automovil a inicializar</param>
+        /// <param name="color">Color del automovil a inicializar</param>
+        /// <param name="tipo">Tipo del automovil a inicializar</param>
         public Automovil(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : this(marca, chasis, color)
         {
             this.tipo = tipo;
         }
         #endregion
 
-
         #region Properties
         /// <summary>
-        /// Los automoviles son medianos
+        /// Implementación de la propiedad abstracta Tamanio de la clase Vehiculo.
+        /// Los automoviles son medianos.
         /// </summary>
         protected override ETamanio Tamanio
         {
@@ -55,6 +68,11 @@ namespace Entidades
         #endregion
 
         #region Métodos
+        /// <summary>
+        /// Publica los datos propios del automovil
+        /// y los datos del vehiculo.
+        /// </summary>
+        /// <returns>Los datos del automovil.</returns>
         public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
