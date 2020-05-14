@@ -1,0 +1,2 @@
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Clases Abstractas\obj\Debug\Clases Abstractas.csproj.CoreCompileInputs.cache
