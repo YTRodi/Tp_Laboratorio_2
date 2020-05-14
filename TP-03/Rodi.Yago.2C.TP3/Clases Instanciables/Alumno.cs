@@ -17,6 +17,7 @@ namespace Clases_Instanciables
 			Becado
 		}
 		#endregion
+
 		#region Atributos
 		private Universidad.EClases ClaseQueToma;
 		private EEstadoCuenta estadoCuenta;

@@ -5,6 +5,8 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using EntidadesAbstractas;
+//Simplifico el enumerado.
+//using Eclase = Clases_Instanciables.Universidad.EClases;
 
 namespace Clases_Instanciables
 {
@@ -85,6 +87,5 @@ namespace Clases_Instanciables
             return this.MostrarDatos();
         }
         #endregion
-
     }
 }

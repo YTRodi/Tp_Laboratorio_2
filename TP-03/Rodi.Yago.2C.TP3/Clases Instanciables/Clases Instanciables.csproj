@@ -53,5 +53,8 @@
       <Name>Clases Abstractas</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Diagrama_ClasesInstanciables.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

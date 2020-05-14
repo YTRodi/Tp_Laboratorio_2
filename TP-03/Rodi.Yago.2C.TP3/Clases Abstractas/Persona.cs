@@ -132,6 +132,22 @@ namespace EntidadesAbstractas
 				//lanzo exception...
 			}
 			return retornoDniStr;
+
+			//OTRA FORMA DE VALIDAR
+			//Esta función nos va a permitir saber si el número pasado (num) es de tipo Int32 o no.
+			//Ésta función nos será de utilizad cuando queramos validar tipos de datos numéricos en C#.
+			//public bool isInt32(String num)
+			//{
+			//	try
+			//	{
+			//		Int32.Parse(num);
+			//		return true;
+			//	}
+			//	catch
+			//	{
+			//		return false;
+			//	}
+			//}
 		}
 
 		private string ValidarNombreApellido(string dato)
