@@ -105,7 +105,7 @@ namespace Clases_Instanciables
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.AppendLine($"Clase: {this.Clase}");
-			sb.AppendLine($"Profesor: {this.Instructor}");
+			sb.AppendLine($"Profesor: {this.Instructor.ToString()}");
 
 			foreach (Alumno item in this.listaAlumnos)
 			{

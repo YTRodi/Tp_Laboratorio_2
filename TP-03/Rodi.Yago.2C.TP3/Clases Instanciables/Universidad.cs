@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Excepciones;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +12,7 @@ using System.Threading.Tasks;
 namespace Clases_Instanciables
 {
     public class Universidad
-	{
+    {
         #region Enumerados
         public enum EClases
         {
@@ -110,11 +113,17 @@ namespace Clases_Instanciables
         public static bool operator ==(Universidad g, Alumno a)
         {
             bool inscripto = false;
-            foreach (Alumno item in g.Alumnos)
+            if (!(g is null))
             {
-                if (item == a)
-                    inscripto = true;
+                foreach (Alumno item in g.Alumnos)
+                {
+                    if (item == a)
+                        inscripto = true;
+                }
             }
+            else
+                throw new NullReferenceException("Universidad Nula -- EN: Universidad == Alumno");
+
             return inscripto;
         }
 
@@ -126,11 +135,17 @@ namespace Clases_Instanciables
         public static bool operator ==(Universidad g, Profesor i)
         {
             bool daClases = false;
-            foreach (Profesor item in g.Instructores)
+            if (!(g is null))
             {
-                if (item == i)
-                    daClases = true;
+                foreach (Profesor item in g.Instructores)
+                {
+                    if (item == i)
+                        daClases = true;
+                }
             }
+            else
+                throw new NullReferenceException("Universidad Nula -- EN: Universidad == Profesor");
+
             return daClases;
         }
 
@@ -141,33 +156,48 @@ namespace Clases_Instanciables
 
         public static Profesor operator ==(Universidad u, EClases clase)
         {
-            Profesor primerProfesor = null;
-            foreach  (Profesor item in u.Instructores)
+            Profesor primerProfeCapazDeDarEsaClase = null;
+            if (!(u is null))
             {
-                if (item == clase)
+                foreach (Profesor item in u.Instructores)
                 {
-                    primerProfesor = item;
+                    if (item == clase)
+                    {
+                        primerProfeCapazDeDarEsaClase = item;
+                        //el primer profe que SI pueda dar la clase lo retorno.
+                        break;
+                    }
                 }
+                if (primerProfeCapazDeDarEsaClase is null)
+                    throw new SinProfesorException();
             }
-            if (primerProfesor is null)
-            {
-                //throw new SinProfesorExceptio();
-            }
-            return primerProfesor;
+            else
+                throw new NullReferenceException("Universidad Nula -- EN: Universidad == Clase");
+
+            return primerProfeCapazDeDarEsaClase;
         }
 
         public static Profesor operator !=(Universidad u, EClases clase)
         {
-            Profesor primerProfesor = null;
-            foreach (Profesor item in u.Instructores)
+            Profesor primerProfeQueNoPuedaDarLaClase = null;
+            if (!(u is null))
             {
-                if (item != clase)
+                foreach (Profesor item in u.Instructores)
                 {
-                    primerProfesor = item;//el primer profe que no pueda dar la clase lo retorno.
-                    break;
+                    if (item != clase)
+                    {
+                        primerProfeQueNoPuedaDarLaClase = item;
+                        //el primer profe que NO pueda dar la clase lo retorno.
+                        break;
+                    }
                 }
-            }//Si no hubiera instructores, se lanza solo la exception QUE NO HAY PROFESOR?
-            return primerProfesor;
+                if (!(primerProfeQueNoPuedaDarLaClase is null))
+                    throw new SinProfesorException();
+            }
+            else
+                throw new NullReferenceException("Universidad Nula -- EN: Universidad != Clase");
+
+            return primerProfeQueNoPuedaDarLaClase;
         }
 
 
@@ -176,9 +206,8 @@ namespace Clases_Instanciables
             if (u != a)
                 u.Alumnos.Add(a);
             else
-            {
-                //throw new AlumnoRepetidoException;
-            }
+                throw new AlumnoRepetidoException();
+
             return u;
         }
 
@@ -187,62 +216,43 @@ namespace Clases_Instanciables
         {
             if (u != i)
                 u.Instructores.Add(i);
-            else
-            {
-                //throw SinProfesor
-            }
-            //No hace falta lanzar una exception debido a que ya se lanzaria en los operadores.
+
             return u;
         }
         public static Universidad operator +(Universidad g, EClases clase)
         {
-            //JERARQUIA:
-            //CLASE --> PROFESOR --> JORNADA --> ALUMNOS --> AGREGO LA JORNADA A LA UNIVERSIDAD.
-
             //En estas variables voy a guardar lo que suceda.
             Jornada auxJornada = null;
             Profesor auxProfesor = null;
 
-            if(!(g is null))
+            foreach (Profesor profe in g.Instructores)
             {
-                //SE PUEDE HACER MEJOR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
-                //////////////////////////////////////////////////////////////////////
-                foreach (Profesor item in g.Instructores)
+                if (profe == clase)//si la clase está dada por algún profesor, se la asigno al profe.
                 {
-                    if(item == clase)//si la clase está dada por algún profesor, se la asigno al profe.
-                    {
-                        auxProfesor = item;
-                        break;
-                    }
-                }
-                if(!(auxProfesor is null))
-                {
-                    //throw new SinPrxfesorExceptio();
+                    //auxProfesor = profe;
+                    auxProfesor = g == clase;//Le asigno el primer profe en dar la clase.
+                    //break;
                 }
                 else
                 {
-                    //Creo jornada.
-                    auxJornada = new Jornada(clase, auxProfesor);
-                }
-
-                foreach (Alumno item in g.Alumnos)
-                {
-                    if (item == clase)
-                        auxJornada.Alumnos.Add(item);//agrego el alumno a la jornada.
-                }
-
-                if(!(auxJornada is null))
-                {
-                    g.Jornada.Add(auxJornada);//agrego la jornada a la universidad.
+                    auxProfesor = g != clase;
+                    //break;
                 }
             }
-            else
+
+            //Creo jornada. (SI NO OCURRIÓ NINGUNA EXCEPTION)
+            auxJornada = new Jornada(clase, auxProfesor);
+
+            foreach (Alumno alumnito in g.Alumnos)
             {
-                //SI ES NULL LA UNIVERSIDAD PODRÍA LANZAR UN NULLREFECENTEXCEPTION.
+                if (alumnito == clase)//si el alumno cumpleRequisitos entra
+                    auxJornada += alumnito;//agrego el alumno a la jornada.
             }
+
+            if (!(auxJornada is null))
+                g.Jornada.Add(auxJornada);//agrego la jornada a la universidad.
+
+
             return g;
         }
         #endregion

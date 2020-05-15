@@ -49,7 +49,7 @@ namespace Clases_Instanciables
         private void _randomClases()
         {
             Array array = Enum.GetValues(typeof(Universidad.EClases));
-            this.clasesDelDia.Enqueue((Universidad.EClases)array.GetValue(random.Next(array.Length)));
+            this.clasesDelDia.Enqueue((Universidad.EClases)array.GetValue(Profesor.random.Next(array.Length)));
         }
         #endregion
 

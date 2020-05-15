@@ -63,7 +63,7 @@ namespace Clases_Instanciables
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.AppendLine(base.MostrarDatos());
-			sb.AppendLine($"Clase que toma: {this.ParticiparEnClase()}");
+			sb.AppendLine($"{this.ParticiparEnClase()}");
 			sb.AppendLine($"Estado de cuenta: {this.estadoCuenta}");//cuota al dia, esta becado, deudor
 			return sb.ToString();
 		}

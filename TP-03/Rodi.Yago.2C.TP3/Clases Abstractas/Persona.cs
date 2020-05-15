@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Excepciones;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
@@ -109,29 +110,45 @@ namespace EntidadesAbstractas
         {
 			int retornoDni = default(int);
 
-			if (nacionalidad == ENacionalidad.Argentino && dato >= 1 && dato <= 89999999)
-				retornoDni = dato;
-			else if (nacionalidad == ENacionalidad.Extranjero && dato >= 90000000 && dato <= 99999999)
-				retornoDni = dato;
-			else
+			switch (nacionalidad)
 			{
-				//lanzo exception...
+				case ENacionalidad.Argentino:
+					if(dato >= 1 && dato <= 89999999)
+						retornoDni = dato;
+					else
+						throw new DniInvalidoException("El largo del DNI es inválido.(ARGENTINO)");
+					break;
+
+				case ENacionalidad.Extranjero:
+					if (dato >= 90000000 && dato < 99999999)
+						retornoDni = dato;
+					else
+						throw new DniInvalidoException("El largo del DNI es inválido.(EXTRANJERO)");
+					break;
 			}
+
+			//if (nacionalidad == ENacionalidad.Argentino && dato >= 1 && dato <= 89999999)
+			//	retornoDni = dato;
+			//else if (nacionalidad == ENacionalidad.Extranjero && dato >= 90000000 && dato <= 99999999)
+			//	retornoDni = dato;
+			//else
+			//{
+			//	throw new NacionalidadInvalidaException()
+			//	//lanzo exception...
+			//}
 
 			return retornoDni;
 		}
 		private int ValidarDni(ENacionalidad nacionalidad, string dato)
 		{
-			Regex expresionRegular = new Regex("^[0-9]+?$");
-			int retornoDniStr = default(int);
+			int retornoDniInt = default(int);
 
-			if (expresionRegular.IsMatch(dato) && int.TryParse(dato, out int auxDni))
-				retornoDniStr = this.ValidarDni(nacionalidad, auxDni);
+			if (int.TryParse(dato, out retornoDniInt))
+				retornoDniInt = ValidarDni(nacionalidad, retornoDniInt);
 			else
-			{
-				//lanzo exception...
-			}
-			return retornoDniStr;
+				throw new DniInvalidoException("No se pudo cargar el DNI");
+
+			return retornoDniInt;
 
 			//OTRA FORMA DE VALIDAR
 			//Esta función nos va a permitir saber si el número pasado (num) es de tipo Int32 o no.
@@ -152,8 +169,9 @@ namespace EntidadesAbstractas
 
 		private string ValidarNombreApellido(string dato)
 		{
-			Regex expresionRegular = new Regex("^[a-z|A-Z]+?$");
-			string retornoStr = null;
+			//https://codetrainers.wordpress.com/2016/10/15/validando-campos-con-expresiones-regulares-en-c/
+			Regex expresionRegular = new Regex("^[a-zA-Z]*$");
+			string retornoStr = null;//Caso contrario, no se cargará.
 
 			if (expresionRegular.IsMatch(dato))
 				retornoStr = dato;

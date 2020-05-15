@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="Diagrama_ClasesAbstractas.cd" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{ed16563c-cae8-4b47-b6cc-2089519f8022}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
