@@ -5,13 +5,11 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using EntidadesAbstractas;
-//Simplifico el enumerado.
-//using Eclase = Clases_Instanciables.Universidad.EClases;
 
 namespace Clases_Instanciables
 {
     public sealed class Profesor : Universitario
-	{
+    {
         #region Atributos
         private Queue<Universidad.EClases> clasesDelDia;//FIFO
         private static Random random;
@@ -34,7 +32,7 @@ namespace Clases_Instanciables
         {
             this.clasesDelDia = new Queue<Universidad.EClases>();
             this._randomClases();
-            //this._randomClases();
+            this._randomClases();
         }
         #endregion
 
@@ -42,14 +40,16 @@ namespace Clases_Instanciables
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(base.ToString());
-            sb.AppendLine(this.ParticiparEnClase());
+            //sb.AppendLine(base.ToString());
+            sb.AppendFormat(base.MostrarDatos());
+            sb.AppendFormat(this.ParticiparEnClase());
             return sb.ToString();
         }
         private void _randomClases()
         {
-            Array array = Enum.GetValues(typeof(Universidad.EClases));
-            this.clasesDelDia.Enqueue((Universidad.EClases)array.GetValue(Profesor.random.Next(array.Length)));
+            //Hasta 4, no sé por qué, sino elije aleatoriamente entre programación, laboratorio o legislación y no llega a SPD.
+            int auxRnd = random.Next(0, 4);
+            this.clasesDelDia.Enqueue((Universidad.EClases)auxRnd);
         }
         #endregion
 
@@ -75,10 +75,10 @@ namespace Clases_Instanciables
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Clases del día:");
+            sb.AppendFormat("CLASES DEL DÍA:\n");
             foreach (Universidad.EClases clase in this.clasesDelDia)
             {
-                sb.AppendFormat($"{clase} ");
+                sb.AppendFormat($"{clase}\n");
             }
             return sb.ToString();
         }

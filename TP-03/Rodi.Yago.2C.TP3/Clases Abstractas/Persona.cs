@@ -68,7 +68,7 @@ namespace EntidadesAbstractas
 			}
 			set
 			{
-				this.dni = this.ValidarDni(Nacionalidad, value);
+				this.dni = this.ValidarDni(this.Nacionalidad, value);
 			}
 		}
 
@@ -76,7 +76,7 @@ namespace EntidadesAbstractas
 		{
 			set
 			{
-				this.dni = this.ValidarDni(Nacionalidad, value);
+				this.dni = this.ValidarDni(this.Nacionalidad, value);
 			}
 		}
 		#endregion
@@ -116,14 +116,14 @@ namespace EntidadesAbstractas
 					if(dato >= 1 && dato <= 89999999)
 						retornoDni = dato;
 					else
-						throw new DniInvalidoException("El largo del DNI es inválido.(ARGENTINO)");
+						throw new NacionalidadInvalidaException("La nacionalidad no se condice con el número de DNI.");
 					break;
 
 				case ENacionalidad.Extranjero:
 					if (dato >= 90000000 && dato < 99999999)
 						retornoDni = dato;
 					else
-						throw new DniInvalidoException("El largo del DNI es inválido.(EXTRANJERO)");
+						throw new NacionalidadInvalidaException("La nacionalidad no se condice con el número de DNI.");
 					break;
 			}
 
@@ -170,7 +170,8 @@ namespace EntidadesAbstractas
 		private string ValidarNombreApellido(string dato)
 		{
 			//https://codetrainers.wordpress.com/2016/10/15/validando-campos-con-expresiones-regulares-en-c/
-			Regex expresionRegular = new Regex("^[a-zA-Z]*$");
+			Regex expresionRegular = new Regex("^[a-zA-ZÁÉÍÓÚáéíóú]*$");
+			//^[a-zA-ZÁÉÍÓÚáéíóú]*$ FUNCA
 			string retornoStr = null;//Caso contrario, no se cargará.
 
 			if (expresionRegular.IsMatch(dato))
@@ -184,10 +185,8 @@ namespace EntidadesAbstractas
 		public override string ToString()
 		{
 			StringBuilder sb = new StringBuilder();
-			sb.AppendLine($"Nombre: {this.Nombre}");
-			sb.AppendLine($"Apellido: {this.Apellido}");
-			sb.AppendLine($"Dni: {this.DNI}");
-			sb.AppendLine($"Nacionalidad: {this.Nacionalidad}");
+			sb.AppendLine($"NOMBRE COMPLETO: {this.Apellido}, {this.Nombre}");
+			sb.AppendLine($"NACIONALIDAD: {this.Nacionalidad}");
 			return sb.ToString();
 		}
 		#endregion

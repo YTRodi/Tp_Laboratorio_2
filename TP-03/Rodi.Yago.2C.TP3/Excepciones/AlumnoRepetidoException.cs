@@ -9,7 +9,7 @@ namespace Excepciones
     public class AlumnoRepetidoException :Exception
     {
         #region Constructores
-        public AlumnoRepetidoException() : base()
+        public AlumnoRepetidoException() : base("Alumno repetido.")
         {
 
         }

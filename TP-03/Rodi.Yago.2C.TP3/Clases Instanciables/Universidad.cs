@@ -1,8 +1,10 @@
-﻿using Excepciones;
+﻿using Archivos;
+using Excepciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
@@ -89,23 +91,35 @@ namespace Clases_Instanciables
         private static string MostrarDatos(Universidad uni)
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("JORNADA:\n");
             foreach (Jornada item in uni.Jornada)
             {
-                sb.AppendLine($"{item.Clase.ToString()}");//MUESTRO DATOS DE LAS CLASES
-                sb.AppendLine($"{item.Instructor.ToString()}");//MUESTRO DATOS DE LOS PROFESORES
-                sb.AppendLine($"{item.Alumnos.ToString()}");//MUESTRO DATOS DE LOS ALUMNOS
+                sb.AppendFormat(item.ToString());
+                sb.AppendFormat("<-------------------------------------------------->\r\n\n");
             }
             return sb.ToString();
         }
 
-        public bool Guardar(Universidad uni)
+        public static bool Guardar(Universidad uni)
         {
-            return true;
+            Xml<Universidad> archivoXmlUni = new Xml<Universidad>();
+            string ruta = Directory.GetCurrentDirectory() + @"\Universidad.xml";
+            bool pudoGuardar = false;
+
+            if (archivoXmlUni.Guardar(ruta, uni))
+                pudoGuardar = true;
+
+            return pudoGuardar;
         }
 
         public Universidad Leer()
         {
-            return this;
+            Xml<Universidad> archivoXmlUni = new Xml<Universidad>();
+            string ruta = Directory.GetCurrentDirectory() + @"\Universidad.xml";
+
+            archivoXmlUni.Leer(ruta, out Universidad uni);
+
+            return uni;
         }
         #endregion
 
@@ -118,7 +132,10 @@ namespace Clases_Instanciables
                 foreach (Alumno item in g.Alumnos)
                 {
                     if (item == a)
+                    {
                         inscripto = true;
+                        break;
+                    }
                 }
             }
             else
@@ -140,7 +157,10 @@ namespace Clases_Instanciables
                 foreach (Profesor item in g.Instructores)
                 {
                     if (item == i)
+                    {
                         daClases = true;
+                        break;
+                    }
                 }
             }
             else
@@ -171,8 +191,8 @@ namespace Clases_Instanciables
                 if (primerProfeCapazDeDarEsaClase is null)
                     throw new SinProfesorException();
             }
-            else
-                throw new NullReferenceException("Universidad Nula -- EN: Universidad == Clase");
+            //else
+            //    throw new NullReferenceException("Universidad Nula -- EN: Universidad == Clase");
 
             return primerProfeCapazDeDarEsaClase;
         }
@@ -191,11 +211,9 @@ namespace Clases_Instanciables
                         break;
                     }
                 }
-                if (!(primerProfeQueNoPuedaDarLaClase is null))
-                    throw new SinProfesorException();
             }
-            else
-                throw new NullReferenceException("Universidad Nula -- EN: Universidad != Clase");
+            //else
+            //    throw new NullReferenceException("Universidad Nula -- EN: Universidad != Clase");
 
             return primerProfeQueNoPuedaDarLaClase;
         }
@@ -221,37 +239,21 @@ namespace Clases_Instanciables
         }
         public static Universidad operator +(Universidad g, EClases clase)
         {
-            //En estas variables voy a guardar lo que suceda.
-            Jornada auxJornada = null;
-            Profesor auxProfesor = null;
-
-            foreach (Profesor profe in g.Instructores)
+            if(!(g is null))
             {
-                if (profe == clase)//si la clase está dada por algún profesor, se la asigno al profe.
+                Profesor auxProfesor = (g == clase);
+                //Creo jornada. (SI NO OCURRIÓ NINGUNA EXCEPTION)
+                Jornada auxJornada = new Jornada(clase, auxProfesor);
+
+                foreach (Alumno alumnito in g.Alumnos)
                 {
-                    //auxProfesor = profe;
-                    auxProfesor = g == clase;//Le asigno el primer profe en dar la clase.
-                    //break;
+                     if (alumnito == clase)//si el alumno cumpleRequisitos entra
+                        auxJornada += alumnito;//agrego el alumno a la jornada.
                 }
-                else
-                {
-                    auxProfesor = g != clase;
-                    //break;
-                }
+
+                if (!(auxJornada is null))
+                    g.Jornada.Add(auxJornada);//agrego la jornada a la universidad.
             }
-
-            //Creo jornada. (SI NO OCURRIÓ NINGUNA EXCEPTION)
-            auxJornada = new Jornada(clase, auxProfesor);
-
-            foreach (Alumno alumnito in g.Alumnos)
-            {
-                if (alumnito == clase)//si el alumno cumpleRequisitos entra
-                    auxJornada += alumnito;//agrego el alumno a la jornada.
-            }
-
-            if (!(auxJornada is null))
-                g.Jornada.Add(auxJornada);//agrego la jornada a la universidad.
-
 
             return g;
         }

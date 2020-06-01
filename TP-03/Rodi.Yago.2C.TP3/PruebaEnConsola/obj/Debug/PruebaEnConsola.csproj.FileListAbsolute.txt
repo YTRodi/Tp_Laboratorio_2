@@ -1,0 +1,16 @@
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\PruebaEnConsola.exe.config
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\PruebaEnConsola.exe
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\PruebaEnConsola.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Archivos.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Clases Abstractas.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Clases Instanciables.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Archivos.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Clases Abstractas.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Clases Instanciables.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\bin\Debug\Excepciones.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\obj\Debug\PruebaEnConsola.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\obj\Debug\PruebaEnConsola.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\obj\Debug\PruebaEnConsola.csproj.CopyComplete
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\obj\Debug\PruebaEnConsola.exe
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\PruebaEnConsola\obj\Debug\PruebaEnConsola.pdb

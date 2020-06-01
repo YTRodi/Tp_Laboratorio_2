@@ -1,0 +1,6 @@
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Excepciones\obj\Debug\Excepciones.pdb
