@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Clases_Instanciables.Alumno">
+    <Position X="0.5" Y="0.5" Width="8.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Clases_Instanciables.Alumno.EEstadoCuenta">
+        <TypeIdentifier>
+          <NewMemberFileName>Alumno.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAgAoAAAAAAAAAAAAAAAAAAAAiA=</HashCode>
+      <FileName>Alumno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clases_Instanciables.Jornada">
+    <Position X="6.25" Y="5.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAESAAAAAAAAAAAAAAAIIQABACEAiA=</HashCode>
+      <FileName>Jornada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clases_Instanciables.Profesor">
+    <Position X="0.5" Y="5.75" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAAAAAAEgAAAgAAAAAAAAAAAAAQAAAAAAiA=</HashCode>
+      <FileName>Profesor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Clases_Instanciables.Universidad">
+    <Position X="9.5" Y="0.5" Width="3.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Clases_Instanciables.Universidad.EClases">
+        <TypeIdentifier>
+          <NewMemberFileName>Universidad.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAACAAAAAAAE2AAAAAAAAgAAAAAAIAAABgAAAiA=</HashCode>
+      <FileName>Universidad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

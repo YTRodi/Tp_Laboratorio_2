@@ -1,0 +1,28 @@
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\obj\Debug\Testeos.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\obj\Debug\Testeos.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Testeos.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Testeos.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Archivos.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Clases Abstractas.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Clases Instanciables.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\PruebaEnConsola.exe
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Archivos.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Clases Abstractas.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Clases Instanciables.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Excepciones.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\PruebaEnConsola.pdb
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\PruebaEnConsola.exe.config
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\obj\Debug\Testeos.csproj.CopyComplete
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\obj\Debug\Testeos.dll
+C:\Users\YAGO\Desktop\Tp_Laboratorio_2\TP-03\Rodi.Yago.2C.TP3\Testeos\obj\Debug\Testeos.pdb

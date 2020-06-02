@@ -9,7 +9,7 @@ namespace Excepciones
     public class DniInvalidoException : Exception
     {
         #region Constructores
-        public DniInvalidoException()
+        public DniInvalidoException() : this("No se pudo cargar el DNI")
         {
 
         }

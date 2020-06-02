@@ -46,7 +46,7 @@
     <Compile Include="Universitario.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Diagrama_ClasesAbstractas.cd" />
+    <None Include="ClassDiagram de clases Abstractas.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Excepciones\Excepciones.csproj">

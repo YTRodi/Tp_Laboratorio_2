@@ -85,23 +85,41 @@ namespace EntidadesAbstractas
 		public Persona()
 		{
 		}
-		public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
-			: this(nombre, apellido, null, nacionalidad)
-		{
-			
-		}
-		public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
-			: this(nombre, apellido, dni.ToString(), nacionalidad)
-		{
 
-		}
-		public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
+        public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
 		{
 			this.Nombre = nombre;
 			this.Apellido = apellido;
 			this.Nacionalidad = nacionalidad;
+        }
+
+		public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
+			:this(nombre,apellido,nacionalidad)
+		{
+			this.DNI = dni;
+		}
+		public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
+			: this(nombre, apellido, nacionalidad)
+		{
 			this.StringToDNI = dni;
 		}
+		//public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
+		//	: this(nombre, apellido, null, nacionalidad)
+		//{
+
+		//}
+		//public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
+		//	: this(nombre, apellido, dni.ToString(), nacionalidad)
+		//{
+
+		//}
+		//public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
+		//{
+		//	this.Nombre = nombre;
+		//	this.Apellido = apellido;
+		//	this.Nacionalidad = nacionalidad;
+		//	this.StringToDNI = dni;
+		//}
 
 		#endregion
 
@@ -127,16 +145,6 @@ namespace EntidadesAbstractas
 					break;
 			}
 
-			//if (nacionalidad == ENacionalidad.Argentino && dato >= 1 && dato <= 89999999)
-			//	retornoDni = dato;
-			//else if (nacionalidad == ENacionalidad.Extranjero && dato >= 90000000 && dato <= 99999999)
-			//	retornoDni = dato;
-			//else
-			//{
-			//	throw new NacionalidadInvalidaException()
-			//	//lanzo exception...
-			//}
-
 			return retornoDni;
 		}
 		private int ValidarDni(ENacionalidad nacionalidad, string dato)
@@ -146,32 +154,14 @@ namespace EntidadesAbstractas
 			if (int.TryParse(dato, out retornoDniInt))
 				retornoDniInt = ValidarDni(nacionalidad, retornoDniInt);
 			else
-				throw new DniInvalidoException("No se pudo cargar el DNI");
+				throw new DniInvalidoException();
 
 			return retornoDniInt;
-
-			//OTRA FORMA DE VALIDAR
-			//Esta función nos va a permitir saber si el número pasado (num) es de tipo Int32 o no.
-			//Ésta función nos será de utilizad cuando queramos validar tipos de datos numéricos en C#.
-			//public bool isInt32(String num)
-			//{
-			//	try
-			//	{
-			//		Int32.Parse(num);
-			//		return true;
-			//	}
-			//	catch
-			//	{
-			//		return false;
-			//	}
-			//}
 		}
 
 		private string ValidarNombreApellido(string dato)
 		{
-			//https://codetrainers.wordpress.com/2016/10/15/validando-campos-con-expresiones-regulares-en-c/
 			Regex expresionRegular = new Regex("^[a-zA-ZÁÉÍÓÚáéíóú]*$");
-			//^[a-zA-ZÁÉÍÓÚáéíóú]*$ FUNCA
 			string retornoStr = null;//Caso contrario, no se cargará.
 
 			if (expresionRegular.IsMatch(dato))
