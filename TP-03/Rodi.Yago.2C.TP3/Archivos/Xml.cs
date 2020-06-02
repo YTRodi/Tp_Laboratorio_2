@@ -28,6 +28,7 @@ namespace Archivos
                     {
                         using (xmlWriter = new XmlTextWriter(archivo, Encoding.UTF8))
                         {
+                            xmlWriter.Formatting = Formatting.Indented;
                             xmlSer = new XmlSerializer(typeof(T));
                             xmlSer.Serialize(xmlWriter, datos);
                             pudoSerializar = true;
