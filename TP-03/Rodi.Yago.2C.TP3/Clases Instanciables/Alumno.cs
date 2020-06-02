@@ -65,20 +65,12 @@ namespace Clases_Instanciables
 			StringBuilder sb = new StringBuilder();
 
 			sb.AppendFormat(base.MostrarDatos());
-            switch (this.estadoCuenta)
-            {
-                case EEstadoCuenta.AlDia:
-					sb.AppendFormat("ESTADO DE CUENTA: Cuota al día\n");//tal cuál el tp
-					break;
 
-                case EEstadoCuenta.Deudor:
-					sb.AppendFormat("ESTADO DE CUENTA: Deudor\n");
+			if(this.estadoCuenta is EEstadoCuenta.AlDia)
+				sb.AppendFormat("ESTADO DE CUENTA: Cuota al día\n");//tal cuál el tp
+			else
+				sb.AppendFormat($"ESTADO DE CUENTA: {this.estadoCuenta}\n");
 
-					break;
-                case EEstadoCuenta.Becado:
-					sb.AppendFormat("ESTADO DE CUENTA: Becado\n");
-					break;
-            }
 			sb.AppendFormat($"{this.ParticiparEnClase()}");
 
 			return sb.ToString();
