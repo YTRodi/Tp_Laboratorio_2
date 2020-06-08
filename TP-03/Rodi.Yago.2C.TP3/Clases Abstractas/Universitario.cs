@@ -23,6 +23,20 @@ namespace EntidadesAbstractas
         }
         #endregion
 
+        /// <summary>
+        /// Propiedad pura y exclusivamente para la serialización XML
+        /// </summary>
+        public int Legajo
+        {
+            get
+            {
+                return this.legajo;
+            }
+            set
+            {
+                this.legajo = value;
+            }
+        }
         #region Métodos
         protected virtual string MostrarDatos()
         {
