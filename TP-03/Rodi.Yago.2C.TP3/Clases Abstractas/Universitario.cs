@@ -13,9 +13,22 @@ namespace EntidadesAbstractas
         #endregion
 
         #region Constructores
+        /// <summary>
+        /// Constructor por defecto de Universitario.
+        /// </summary>
         public Universitario()
         {
         }
+
+        /// <summary>
+        /// Constructor que llama la base e inicializa el atributo:
+        /// - legajo.
+        /// </summary>
+        /// <param name="legajo"></param>
+        /// <param name="nombre"></param>
+        /// <param name="apellido"></param>
+        /// <param name="dni"></param>
+        /// <param name="nacionalidad"></param>
         public Universitario(int legajo, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(nombre, apellido, dni, nacionalidad)
         {
@@ -38,21 +51,44 @@ namespace EntidadesAbstractas
             }
         }
         #region Métodos
+        /// <summary>
+        /// Método que expone los datos del universitario.
+        /// </summary>
+        /// <returns></returns>
         protected virtual string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat($"{base.ToString()}\nLEGAJO NÚMERO: {this.legajo}\n\n");
             return sb.ToString();
         }
+
+        /// <summary>
+        /// Método abstracto que tendrá implementación en las 
+        /// clases heredadas.
+        /// </summary>
+        /// <returns></returns>
         protected abstract string ParticiparEnClase();
         #endregion
 
         #region Operaciones
+        /// <summary>
+        /// Sobrecarga del operador "==" que compara dos universitarios.
+        /// </summary>
+        /// <param name="uni1"></param>
+        /// <param name="uni2"></param>
+        /// <returns></returns>
         public static bool operator ==(Universitario uni1, Universitario uni2)
         {
             return uni1.Equals(uni2);
         }
 
+        /// <summary>
+        /// Sobrecarga del operador "!=" que compara si un universitario es 
+        /// distinto de otro.
+        /// </summary>
+        /// <param name="uni1"></param>
+        /// <param name="uni2"></param>
+        /// <returns></returns>
         public static bool operator !=(Universitario uni1, Universitario uni2)
         {
             return !(uni1 == uni2);
@@ -60,6 +96,13 @@ namespace EntidadesAbstractas
         #endregion
 
         #region Override
+        /// <summary>
+        /// Sobrecarga del método Equals() que verifica
+        /// Si el obj pasado por parámetro es:
+        /// - Universitario, tiene el mismo legajo y el mismo dni.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public override bool Equals(object obj)
         {
             bool sonIguales = false;

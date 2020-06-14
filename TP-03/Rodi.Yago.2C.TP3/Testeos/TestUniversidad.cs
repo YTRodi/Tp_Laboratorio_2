@@ -8,6 +8,10 @@ namespace Testeos
     [TestClass]
     public class TestUniversidad
     {
+        /// <summary>
+        /// Test que valida que se produce la excepción "AlumnoRepetidoException"
+        /// cuando quiere agregarse el mismo alumno a la universidad.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(AlumnoRepetidoException))]
         public void AlumnoRepetido()
@@ -24,6 +28,11 @@ namespace Testeos
             //Assert Exception.
         }
 
+        /// <summary>
+        /// Test que valida que se produce la excepción "NacionalidadInvalidaException"
+        /// cuando el dni del alumno no coincide con el rango de dni que tendría que tener
+        /// su nacionalidad.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(NacionalidadInvalidaException))]
         public void NacionalidadInvalida()
@@ -37,6 +46,10 @@ namespace Testeos
             //Assert Exception.
         }
 
+        /// <summary>
+        /// Test que valida que se produce la excepción "SinProfesorException"
+        /// cuando un profesor no da esa clase.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(SinProfesorException))]
         public void SinProfesor()
@@ -53,6 +66,10 @@ namespace Testeos
             //Assert Exception.
         }
 
+        /// <summary>
+        /// Test que valida que se produce la excepción "DniInvalidoException"
+        /// cuando se ingresa una cadena de carácteres en el dni.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(DniInvalidoException))]
         public void DniInvalido()

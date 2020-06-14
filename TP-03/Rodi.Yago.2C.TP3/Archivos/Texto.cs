@@ -11,13 +11,22 @@ namespace Archivos
     public class Texto : IArchivo<string>
     {
         #region Implementación métodos interface (IArchivo)
+
+        /// <summary>
+        /// Implementación del método de la interface IArchivos
+        /// que guarda datos en formato de texto.
+        /// Caso contrario, lanzará la excepción: ArchivosException().
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, string datos)
         {
             bool pudoGuardar = false;
 
             try
             {
-                if (!(archivo is null)) //&& File.Exists(archivo))
+                if (!(archivo is null))
                 {
                     using (StreamWriter sw = new StreamWriter(archivo))
                     {
@@ -34,6 +43,14 @@ namespace Archivos
             return pudoGuardar;
         }
 
+        /// <summary>
+        /// Implementación del método de la interface IArchivos
+        /// que lee datos en formato de texto.
+        /// Caso contrario, lanzará la excepción: ArchivosException().
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Leer(string archivo, out string datos)
         {
             bool pudoLeer = false;
@@ -41,7 +58,7 @@ namespace Archivos
 
             try
             {
-                if (!(archivo is null))// && File.Exists(archivo))
+                if (!(archivo is null))
                 {
                     using (StreamReader sr = new StreamReader(archivo))
                     {

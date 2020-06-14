@@ -92,6 +92,9 @@ namespace PruebaEnConsola
             {
                 Universidad.Guardar(uni);
                 Console.WriteLine("Archivo de Universidad guardado.");
+                //Universidad aux = new Universidad();
+                //aux = Universidad.Leer();
+                //Console.WriteLine(aux.ToString());
             }
             catch (ArchivosException e)
             {

@@ -14,6 +14,14 @@ namespace Archivos
     {
         #region Implementación métodos interface (IArchivo)
 
+        /// <summary>
+        /// Implementación del método de la interface IArchivos
+        /// que serializa datos en formato XML.
+        /// Caso contrario, lanzará la excepción: ArchivosException().
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
         public bool Guardar(string archivo, T datos)
         {
             bool pudoSerializar = false;
@@ -44,7 +52,15 @@ namespace Archivos
             return pudoSerializar;
         }
 
-        public bool Leer(string archivo, out T datos)
+        /// <summary>
+        /// Implementación del método de la interface IArchivos
+        /// que deserializa datos en formato XML.
+        /// Caso contrario, lanzará la excepción: ArchivosException().
+        /// </summary>
+        /// <param name="archivo"></param>
+        /// <param name="datos"></param>
+        /// <returns></returns>
+        public bool Leer(string archivo, out T datos) 
         {
             bool pudoDeserializar = false;
             XmlTextReader xmlReader;
@@ -59,7 +75,7 @@ namespace Archivos
                     {
                         using (xmlReader = new XmlTextReader(archivo))
                         {
-                            xmlSer = new XmlSerializer(typeof(string));//T  o string?
+                            xmlSer = new XmlSerializer(typeof(T));
                             datos = (T)xmlSer.Deserialize(xmlReader);
                             pudoDeserializar = true;
                         }

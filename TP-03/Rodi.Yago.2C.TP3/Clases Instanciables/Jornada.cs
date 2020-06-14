@@ -17,6 +17,10 @@ namespace Clases_Instanciables
         #endregion
 
         #region Properties
+        /// <summary>
+		/// Propiedad de lectura y escritura,
+		/// que retorna la lista de alumnos.
+		/// </summary>
         public List<Alumno> Alumnos
         {
             get
@@ -28,6 +32,11 @@ namespace Clases_Instanciables
                 this.listaAlumnos = value;
             }
         }
+
+        /// <summary>
+		/// Propiedad de lectura y escritura,
+		/// que retorna la clase.
+		/// </summary>
         public Universidad.EClases Clase
         {
             get
@@ -39,6 +48,11 @@ namespace Clases_Instanciables
                 this.clase = value;
             }
         }
+
+        /// <summary>
+		/// Propiedad de lectura y escritura,
+		/// que retorna la lista de instructores.
+		/// </summary>
         public Profesor Instructor
         {
             get
@@ -53,11 +67,23 @@ namespace Clases_Instanciables
         #endregion
 
         #region Constructores
+        /// <summary>
+        /// Constructor por defecto que inicializa la lista
+        /// de alumnos.
+        /// </summary>
         private Jornada()
         {
-            //this.listaAlumnos = new List<Alumno>();
             this.Alumnos = new List<Alumno>();
         }
+
+        /// <summary>
+		/// Constructor que reutiliza el constructor anterior e inicializa
+        /// los atributos:
+        /// - Clase.
+        /// - Instructor.
+        /// </summary>
+        /// <param name="clase"></param>
+        /// <param name="instructor"></param>
         public Jornada(Universidad.EClases clase, Profesor instructor) : this()
         {
             this.Clase = clase;
@@ -66,6 +92,12 @@ namespace Clases_Instanciables
         #endregion
 
         #region Métodos
+        /// <summary>
+        /// Método estático que guardará en un archivo de texto
+        /// los datos de la Jornada.
+        /// </summary>
+        /// <param name="jornada"></param>
+        /// <returns>Si pudo guardar o no.</returns>
         public static bool Guardar(Jornada jornada)
         {
             Texto archivoTxt = new Texto();
@@ -78,6 +110,10 @@ namespace Clases_Instanciables
             return pudoGuardar;
         }
 
+        /// <summary>
+        /// Método estático que leera el archivo de texto de Jornada.
+        /// </summary>
+        /// <returns>Los datos de la Jornada en formato de texto.</returns>
         public static string Leer()
         {
             Texto archivoTxt = new Texto();
@@ -88,6 +124,13 @@ namespace Clases_Instanciables
         #endregion
 
         #region Operaciones
+        /// <summary>
+        /// Sobrecarga del operador "==" que compara si el Alumno
+        /// participa en esa clase.
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator ==(Jornada j, Alumno a)
         {
             bool participaEnLaClase = false;
@@ -99,11 +142,25 @@ namespace Clases_Instanciables
             return participaEnLaClase;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador "!=" que compara si el Alumno
+        /// no participa en esa clase.
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator !=(Jornada j, Alumno a)
         {
             return !(j == a);
         }
 
+        /// <summary>
+        /// Sobrecarga del operador "+" que agrega a un Alumno a la lista
+        /// solamente si no se encuentra cargado.
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if (j != a)
@@ -113,6 +170,11 @@ namespace Clases_Instanciables
         #endregion
 
         #region Override
+        /// <summary>
+		/// Sobrescritura del método ToString() que expone
+		/// los datos de la Jornada.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
