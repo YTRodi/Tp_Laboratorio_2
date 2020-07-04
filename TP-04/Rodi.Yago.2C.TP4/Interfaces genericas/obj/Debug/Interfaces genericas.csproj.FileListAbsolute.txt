@@ -1,0 +1,6 @@
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Interfaces genericas\bin\Debug\Interfaces.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Interfaces genericas\bin\Debug\Interfaces.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Interfaces genericas\obj\Debug\Interfaces genericas.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Interfaces genericas\obj\Debug\Interfaces genericas.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Interfaces genericas\obj\Debug\Interfaces.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Interfaces genericas\obj\Debug\Interfaces.pdb

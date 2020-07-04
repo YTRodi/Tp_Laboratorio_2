@@ -1,0 +1,11 @@
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\bin\Debug\Clases instanciables.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\bin\Debug\Clases instanciables.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\bin\Debug\Interfaces.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\bin\Debug\Interfaces.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\obj\Debug\Clases.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\obj\Debug\Clases.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\obj\Debug\Clases.csproj.CopyComplete
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\obj\Debug\Clases instanciables.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\obj\Debug\Clases instanciables.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\bin\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases\bin\Debug\Excepciones.pdb

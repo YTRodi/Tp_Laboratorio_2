@@ -1,0 +1,13 @@
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases estáticas.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases estáticas.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases instanciables.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases instanciables.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csproj.CopyComplete
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estáticas.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estáticas.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Interfaces.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Interfaces.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Excepciones.pdb
