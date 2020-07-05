@@ -86,19 +86,19 @@
             this.lstEstadoEntregado.Location = new System.Drawing.Point(548, 54);
             this.lstEstadoEntregado.Name = "lstEstadoEntregado";
             this.lstEstadoEntregado.Size = new System.Drawing.Size(233, 228);
-            this.lstEstadoEntregado.TabIndex = 6;
+            this.lstEstadoEntregado.TabIndex = 1001;
             // 
             // cmsListas
             // 
             this.cmsListas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mostrarToolStripMenuItem});
             this.cmsListas.Name = "cmsListar";
-            this.cmsListas.Size = new System.Drawing.Size(181, 48);
+            this.cmsListas.Size = new System.Drawing.Size(116, 26);
             // 
             // mostrarToolStripMenuItem
             // 
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.mostrarToolStripMenuItem.Text = "Mostrar";
             this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
@@ -118,7 +118,7 @@
             this.lstEstadoEnViaje.Location = new System.Drawing.Point(281, 54);
             this.lstEstadoEnViaje.Name = "lstEstadoEnViaje";
             this.lstEstadoEnViaje.Size = new System.Drawing.Size(233, 228);
-            this.lstEstadoEnViaje.TabIndex = 3;
+            this.lstEstadoEnViaje.TabIndex = 1000;
             // 
             // lblEstadoEnViaje
             // 
@@ -136,7 +136,7 @@
             this.lstEstadoIngresado.Location = new System.Drawing.Point(16, 54);
             this.lstEstadoIngresado.Name = "lstEstadoIngresado";
             this.lstEstadoIngresado.Size = new System.Drawing.Size(233, 228);
-            this.lstEstadoIngresado.TabIndex = 1231;
+            this.lstEstadoIngresado.TabIndex = 999;
             // 
             // lblEstadoIngresado
             // 
@@ -185,7 +185,7 @@
             this.btnMostrarTodos.Location = new System.Drawing.Point(168, 96);
             this.btnMostrarTodos.Name = "btnMostrarTodos";
             this.btnMostrarTodos.Size = new System.Drawing.Size(113, 42);
-            this.btnMostrarTodos.TabIndex = 7;
+            this.btnMostrarTodos.TabIndex = 4;
             this.btnMostrarTodos.Text = "&Mostrar todos";
             this.btnMostrarTodos.UseVisualStyleBackColor = true;
             this.btnMostrarTodos.Click += new System.EventHandler(this.btnMostrarTodos_Click);
@@ -211,7 +211,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(168, 34);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(113, 42);
-            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
