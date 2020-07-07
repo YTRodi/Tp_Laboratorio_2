@@ -9,6 +9,11 @@ namespace EntidadesHechas
 {
     public static class PaqueteDAO
     {
+        #region Delegados y eventos para posibles errores
+        public delegate void DelegadoBDDAO(string msgError);
+        public static event DelegadoBDDAO EventoErrorDAO;
+        #endregion
+
         #region Atributos para la conexión a la BD
         private static string strConnection = @"Data Source = .\SQLEXPRESS; Database = correo-sp-2017; Trusted_Connection = True;";
         private static SqlConnection connectionDB;
@@ -57,9 +62,9 @@ namespace EntidadesHechas
 
                 pudoInsertar = true;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                throw new Exception("Se produjo una excepción en el método Insertar de la clase PaqueteDAO.", ex);
+                PaqueteDAO.EventoErrorDAO(e.Message);
             }
             finally
             {

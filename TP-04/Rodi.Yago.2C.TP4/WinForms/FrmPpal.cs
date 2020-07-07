@@ -39,7 +39,20 @@ namespace WinForms
         private void FrmPpal_Load(object sender, EventArgs e)
         {
             this.correo = new Correo();
-            
+            PaqueteDAO.EventoErrorDAO += ErrorBD;
+        }
+
+        /// <summary>
+        /// Manejador del evento "EventoErrorDAO" que muestra el mensaje del error
+        /// en una ventana en formato modal.
+        /// </summary>
+        /// <param name="msgError"></param>
+        private void ErrorBD(string msgError)
+        {
+            MessageBox.Show(msgError,
+                    "ERROR",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
         }
 
         /// <summary>

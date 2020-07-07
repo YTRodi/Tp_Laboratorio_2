@@ -4,3 +4,9 @@ C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.csprojA
 C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
 C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.dll
 C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Excepciones\bin\Debug\Excepciones.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Excepciones\bin\Debug\Excepciones.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Excepciones\obj\Debug\Excepciones.pdb

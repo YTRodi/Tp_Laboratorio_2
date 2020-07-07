@@ -110,16 +110,11 @@ namespace EntidadesHechas
         /// Cuarto: Si el estado del paquete es igual a "Entregado", lo inserto en la tabla Paquetes.
         /// 
         /// </summary>
+        /// 
+
         public void MockCicloDeVida()
         {
-            /*
-                a. Colocar una demora de 10 segundos.
-                b. Pasar al siguiente estado.
-                c. Informar el estado a través de InformarEstado. EventArgs no tendrá ningún dato extra.
-                d. Repetir las acciones desde el punto A hasta que el estado sea Entregado.
-                e. Finalmente guardar los datos del paquete en la base de datos.
-             */
-            if(!(this is null))
+            if (!(this is null))
             {
                 this.InformaEstado(this, null);
 
@@ -132,16 +127,9 @@ namespace EntidadesHechas
                     this.InformaEstado(this, null);
                 }
 
-                if(this.Estado == EEstado.Entregado)
+                if (this.Estado == EEstado.Entregado)
                 {
-                    try
-                    {
-                        PaqueteDAO.Insertar(this);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception("Se produjo una excepcion en el método MockCicloDeVida()", ex);
-                    }
+                    PaqueteDAO.Insertar(this);
                 }
             }
         }

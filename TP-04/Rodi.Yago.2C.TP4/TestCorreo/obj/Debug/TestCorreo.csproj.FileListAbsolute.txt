@@ -23,3 +23,28 @@ C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.csproj.Co
 C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.csproj.CopyComplete
 C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.dll
 C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\TestCorreo.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\TestCorreo.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Clases estáticas.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Clases instanciables.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Excepciones.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Interfaces.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Clases estáticas.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Clases instanciables.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Excepciones.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Interfaces.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.csprojAssemblyReference.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.csproj.CoreCompileInputs.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.csproj.CopyComplete
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\TestCorreo\obj\Debug\TestCorreo.pdb
