@@ -125,7 +125,7 @@ namespace EntidadesHechas
 
                 while (this.Estado != EEstado.Entregado)
                 {
-                    Thread.Sleep(1000);
+                    Thread.Sleep(4000);
 
                     this.Estado++;
 

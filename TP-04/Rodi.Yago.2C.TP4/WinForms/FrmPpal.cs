@@ -157,11 +157,11 @@ namespace WinForms
                         break;
 
                     case Paquete.EEstado.EnViaje:
-                        this.lblEstado.Text = item.Estado.ToString();
+                        this.lstEstadoEnViaje.Items.Add(item);
                         break;
 
                     case Paquete.EEstado.Entregado:
-                        this.lblEstado.Text = item.Estado.ToString();
+                        this.lstEstadoEntregado.Items.Add(item);
                         break;
                 }
             }

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.gBoxEstadoPaquetes = new System.Windows.Forms.GroupBox();
-            this.lblEstado = new System.Windows.Forms.Label();
             this.lstEstadoEntregado = new System.Windows.Forms.ListBox();
             this.cmsListas = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,7 +53,6 @@
             // 
             // gBoxEstadoPaquetes
             // 
-            this.gBoxEstadoPaquetes.Controls.Add(this.lblEstado);
             this.gBoxEstadoPaquetes.Controls.Add(this.lstEstadoEntregado);
             this.gBoxEstadoPaquetes.Controls.Add(this.lblEstadoEntregado);
             this.gBoxEstadoPaquetes.Controls.Add(this.lstEstadoEnViaje);
@@ -68,15 +66,6 @@
             this.gBoxEstadoPaquetes.TabIndex = 0;
             this.gBoxEstadoPaquetes.TabStop = false;
             this.gBoxEstadoPaquetes.Text = "Estado paquetes";
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(376, 18);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(110, 16);
-            this.lblEstado.TabIndex = 1232;
-            this.lblEstado.Text = "Estado paquete: ";
             // 
             // lstEstadoEntregado
             // 
@@ -269,7 +258,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ContextMenuStrip cmsListas;
         private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
-        private System.Windows.Forms.Label lblEstado;
     }
 }
 
