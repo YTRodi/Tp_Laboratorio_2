@@ -1,0 +1,26 @@
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases estáticas.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases estáticas.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases instanciables.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases instanciables.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csproj.CopyComplete
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estáticas.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estáticas.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Interfaces.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Interfaces.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Excepciones.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases estáticas.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases estáticas.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases instanciables.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Interfaces.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Excepciones.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Clases instanciables.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Interfaces.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\bin\Debug\Excepciones.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csprojAssemblyReference.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csproj.CoreCompileInputs.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estaticas.csproj.CopyComplete
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estáticas.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\Clases estáticas\obj\Debug\Clases estáticas.pdb

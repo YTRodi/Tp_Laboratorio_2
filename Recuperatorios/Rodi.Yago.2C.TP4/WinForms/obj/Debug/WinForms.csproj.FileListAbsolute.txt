@@ -1,0 +1,38 @@
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csprojAssemblyReference.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.Properties.Resources.resources
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csproj.GenerateResource.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csproj.CoreCompileInputs.cache
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\WinForms.exe.config
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\WinForms.exe
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\WinForms.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.exe
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases instanciables.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Excepciones.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Interfaces.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases instanciables.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Excepciones.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Interfaces.pdb
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.FrmPpal.resources
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csproj.CopyComplete
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases estáticas.dll
+C:\Users\YAGO\Desktop\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases estáticas.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\WinForms.exe.config
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\WinForms.exe
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\WinForms.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases estáticas.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases instanciables.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Excepciones.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Interfaces.dll
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases estáticas.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Clases instanciables.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Excepciones.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\bin\Debug\Interfaces.pdb
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csprojAssemblyReference.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.FrmPpal.resources
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.Properties.Resources.resources
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csproj.GenerateResource.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csproj.CoreCompileInputs.cache
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.csproj.CopyComplete
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.exe
+D:\UTN Fra\2do cuatrimestre (progra 2, lab 2, Arquitectura y SO, metodología, matemática)\Progra 2 y lab 2\Tp_Laboratorio_2\TP-04\Rodi.Yago.2C.TP4\WinForms\obj\Debug\WinForms.pdb
